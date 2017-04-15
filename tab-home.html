@@ -1,0 +1,33 @@
+<div class="home">
+  <div style="position: absolute; z-index: -1; top: 0px; left: 0px; bottom: 0px; right: 0px; overflow: hidden; background-size: cover; background-color: #e6e2e0; background-repeat: no-repeat; background-position: 50% 50%; background-image: none;">
+    <video id="bgVideo" autoplay playsinline muted poster="img/sunrise.jpg" class="bg-video">
+      <source src="img/sunrise.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="container caption-center cover">
+    <h1>I'm a web designer living in Wellington</h1>
+    <hr width="80">
+    <p class="lead">
+      I design beautiful websites that are easy to use.<br>
+      I would love to work with you on your next project.
+    </p>
+    <p><a class="btn btn-lg btn-default" href role="button" data-ng-click="tab.setTab(2)">Learn more</a></p>
+  </div>
+</div>
+
+<div class="text-center" id="pageContent">
+  <a href="#pageContent" class="scroll-down-home"><i class="fa fa-3x fa-chevron-down"></i></a>
+</div>
+
+<script>
+  $(function() {
+    var vid = document.getElementById('bgVideo');
+    vid.playbackRate = .5;
+    $('.scroll-down-home').click(function() {
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: $('#pageContent').offset().top
+      }, 600)
+    })
+  })
+</script>

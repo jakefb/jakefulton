@@ -1,0 +1,21 @@
+<div class="about">
+  <div class="container caption-center cover">
+    <h1>About me</h1>
+    <p class="lead">My name is Jake Fulton Buckle, I am a 19 year old full-stack web developer and designer. I enjoy coding and designing beautiful websites.</p>
+  </div>
+</div>
+
+<div class="text-center" id="aboutContent">
+  <a href="#aboutContent" class="scroll-down-about"><i class="fa fa-3x fa-chevron-down"></i></a>
+</div>
+
+<script>
+  $(function() {
+    $('.scroll-down-about').click(function() {
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: $('#aboutContent').offset().top
+      }, 600)
+    })
+  })
+</script>

@@ -1,0 +1,23 @@
+<div class="marketing container">
+  <div class="section">
+    <h1 class="text-center">About me</h1>
+    <hr>
+    <div class="text-center" data-ng-repeat="item in content.items">
+      <img data-ng-src="{{item.image}}" class="img-circle">
+      <h2>{{item.name}}</h2>
+      <p class="lead">{{item.details}}</p>
+    </div>
+  </div>
+  <div class="section">
+    <h1 class="text-center">Portfolio</h1>
+    <hr>
+    <div class="row">
+      <div class="col-md-4 col-sm-6" data-ng-repeat="item in content.sites">
+        <a href="{{item.url}}"><img data-ng-src="{{item.image}}" class="img-responsive"></a>
+        <h2 class="text-center">{{item.name}}</h2>
+        <p>{{item.details}}</p>
+        <p class="text-center"><a class="btn btn-default" href="{{item.url}}" role="button">View {{item.name}} &raquo;</a></p>
+      </div>
+    </div>
+  </div>
+</div>
