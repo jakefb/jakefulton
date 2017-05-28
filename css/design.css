@@ -271,17 +271,6 @@ hr {
           transition: .3s ease-in-out;
 }
 
-.card img {
-  opacity: .8;
-  -webkit-transition: opacity .3s ease-in-out;
-       -o-transition: opacity .3s ease-in-out;
-          transition: opacity .3s ease-in-out;
-}
-
-.card img:hover {
-  opacity: 1;
-}
-
 .card-footer {
   background-color: transparent !important;
   border-top: none !important;
