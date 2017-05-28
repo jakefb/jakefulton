@@ -37,6 +37,13 @@
     }
   })
 
+  app.directive('tabContact', function() {
+    return {
+      restrict: 'E',
+      templateUrl: 'tab-contact.html'
+    }
+  })
+
   app.directive('contentHome', function() {
     return {
       restrict: 'E',
@@ -61,19 +68,16 @@
   var people = [
     {
       name: "Jacob Fulton Buckle",
-      details: "I'm a full-stack web developer and designer living in Wellington, New Zealand. I love designing beautiful websites and logos for my clients. I'm familiar with wide range of languages and frameworks and I enjoy learning new ones. The Web is constantly evolving and I do the same by challenging myself to push the boundaries with new ideas.",
+      details: "I'm a full-stack web developer and designer living in Wellington, New Zealand. I strive to create websites where good design and clean code work in harmony. I challenge myself to push the boundaries with new ideas.",
       email: "jacobafb@gmail.com",
       mobile: "+64 20 409 29632",
-      address: "45 Stansell Ave, Tahunanui, Nelson, 7011",
       github: "jakefb",
       githuburl: "https://github.com/jakefb",
       instagram: "jake.fb",
       instagramurl: "https://instagram.com/jake.fb",
-      twitter: "TotalCodex",
-      twitterurl: "https://twitter.com/TotalCodex",
       facebook: "jake.fultonbuckle",
       facebookurl: "https://www.facebook.com/jake.fultonbuckle",
-      image: "img/jacob.jpg"
+      image: "img/jake-skating.jpg"
     },
   ]
 

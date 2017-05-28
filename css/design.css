@@ -3,21 +3,27 @@
 
 /* Links */
 a,
-a:focus,
+a:focus {
+  color: rgb(64, 126, 231);
+}
 a:hover {
-  color: #00ad9c;
+  color: rgb(0, 173, 156);
+  text-decoration: none;
 }
 
 /* Custom default button */
 .btn-default {
-  color: #fff;
+  color: #fff !important;
   text-shadow: none;
   background-color: rgba(64, 126, 231, 0.6);
   border: 1px rgba(64, 126, 231, 0.6);
+  -webkit-transition: .3s ease-in-out;
+       -o-transition: .3s ease-in-out;
+          transition: .3s ease-in-out;
 }
 .btn-default:hover,
 .btn-default:focus {
-  color: #fff;
+  color: #fff !important;
   text-shadow: none;
   background-color: rgba(0, 173, 156, 0.6);
   border: 1px rgba(0, 173, 156, 1);
@@ -29,9 +35,10 @@ a:hover {
 
 /* Space out content and lighter body text */
 body {
-  padding-top: 20px;
-  padding-bottom: 40px;
+  /*padding-top: 20px;*/
+  /*padding-bottom: 20px;*/
   color: #68615e;
+  background-color: #eee;
 }
 h1,
 h2 {
@@ -44,7 +51,11 @@ a {
   margin-bottom: 3rem;
 }
 hr {
-  width: 40%
+  width: 50%;
+  border-color: rgba(106, 159, 181, .3) !important;
+}
+.img-fluid {
+  width: 100%;
 }
 
 
@@ -52,20 +63,34 @@ hr {
 -------------------------------------------------- */
 
 /* Custom page header */
+.header {
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #e0f0ff;
+  border-bottom: 3px solid #6a9fb5;
+}
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
+  color: #6a9fb5;
+  padding-top: 20px;
   padding-bottom: 19px;
   margin-top: 0;
   margin-bottom: 0;
   line-height: 40px;
 }
 
+.nav-pills {
+  padding-top: 20px;
+}
 /* Custom pills */
 .nav-pills > li > a {
   color: #6a9fb5;
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
-  border-radius: 0;
+  border-radius: 0 !important;
+  -webkit-transition: .3s ease-in-out;
+       -o-transition: .3s ease-in-out;
+          transition: .3s ease-in-out;
 }
 .nav-pills > li > a:hover,
 .nav-pills > li > a:focus {
@@ -81,6 +106,9 @@ hr {
   border-top-color: #f22c40;
   border-bottom-color: #f22c40;
 }
+.nav-pills > li + li {
+  margin-left: .25rem;
+}
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
   color: #fff;
@@ -92,7 +120,8 @@ hr {
 -------------------------------------------------- */
 
 .home,
-.about {
+.about,
+.contact {
   height: 60vh;
   max-height: 58em;
   min-height: 32em;
@@ -100,13 +129,16 @@ hr {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-top: 3px solid #e6e2e0;
   -moz-box-sizing: border-box;
        box-sizing: border-box;
 
 }
 .about {
   background-image: url('../img/ridingpow.jpg');
+}
+.contact {
+  height: calc(100vh - 139px) !important;
+  background-image: url('../img/laptop-sunset.jpg');
 }
 .home h1,
 .about h1 {
@@ -122,12 +154,12 @@ hr {
 .scroll-down-home,
 .scroll-down-about {
   position: relative;
-  bottom: 6em;
+  bottom: 5rem;
   cursor: pointer;
   color: rgba(64, 126, 231, 0.6);
-  -webkit-transition: all .2s linear;
-       -o-transition: all .2s linear;
-          transition: all .2s linear;
+  -webkit-transition: .3s linear;
+       -o-transition: .3s linear;
+          transition: .3s linear;
 }
 .scroll-down-home:focus,
 .scroll-down-about:focus,
@@ -158,30 +190,20 @@ hr {
 /* Marketing content
 -------------------------------------------------- */
 
+.marketing {
+  margin-bottom: 6rem;
+}
+.marketing h1 {
+  color: #6a9fb5 !important;
+}
 /* Center align the text within the three columns below the header */
 .marketing .col-lg-6 {
-  margin-bottom: 20px;
   text-align: center;
 }
 .marketing .col-lg-4 p {
   margin-right: 10px;
   margin-left: 10px;
 }
-.marketing .img-circle {
-  width: 200px;
-  height: 200px;
-  border: 1px solid #eee;
-}
-.marketing .img-responsive {
-  border: 1px solid #eee;
-  border-radius: 3px;
-  opacity: .8;
-  transition: opacity .2s linear;
-}
-.marketing .img-responsive:hover {
-  opacity: 1;
-}
-
 .home {
   position: relative;
 }
@@ -198,7 +220,7 @@ hr {
  */
 
 .cover {
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: rgba(0, 0, 0, .3);
   -webkit-backdrop-filter: blur(2px);
        -o-backdrop-filter: blur(2px);
@@ -207,14 +229,75 @@ hr {
        -o-transition: .3s ease-in-out;
           transition: .3s ease-in-out;
 }
+
+.cover hr {
+  border-color: rgba(255, 255, 255, .3) !important;
+  -webkit-transition: .3s ease-in-out;
+       -o-transition: .3s ease-in-out;
+          transition: .3s ease-in-out;
+}
+
 @media (min-width: 768px) {
   .cover {
+    padding: 2.5rem;
     border-radius: 3em;
   }
   .cover:hover {
     border-radius: 4em;
   }
+  .cover:hover hr {
+    width: 45%;
+  }
 }
+@media (max-width: 767px) {
+  .cover {
+    width: 100%;
+  }
+}
+
+
+/*
+ * Cards
+ */
+
+.card {
+  background-color: transparent;
+  border-color: rgba(106, 159, 181, .3) !important;
+  margin-top: .75rem;
+  border-radius: .75rem;
+  overflow: hidden;
+  -webkit-transition: .3s ease-in-out;
+       -o-transition: .3s ease-in-out;
+          transition: .3s ease-in-out;
+}
+
+.card:hover {
+  border-radius: 1.75rem;
+}
+
+.card img {
+  opacity: .8;
+  -webkit-transition: opacity .3s ease-in-out;
+       -o-transition: opacity .3s ease-in-out;
+          transition: opacity .3s ease-in-out;
+}
+
+.card img:hover {
+  opacity: 1;
+}
+
+.card-footer {
+  background-color: transparent !important;
+  border-top: none !important;
+}
+
+@media (min-width: 768px) {
+  .card-container {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}
+
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -223,18 +306,17 @@ html {
   position: relative;
   min-height: 100%;
 }
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
 .footer {
   position: absolute;
+  color: #fff;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #f5f5f5;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #6a9fb5;
 }
 .container .text-muted {
-  margin: 20px 0;
+  color: #fff !important;
+  margin-bottom: 0 !important;
 }
