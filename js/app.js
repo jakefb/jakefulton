@@ -84,19 +84,19 @@
   var sites = [
     {
       name: "Dovedale",
-      details: "Dovedale is the market leader in the baking of breads, biscuits, crackers and cakes, which are all free of gluten, wheat, dairy and yeast.",
+      details: "Dovedale is the market leader in the baking of gluten free products. Their website was designed from the ground up and uses a custom ecommerce store to suit their needs.",
       url: "http://dovedale.nz",
       image: "img/dovedale.jpg"
     },
     {
       name: "Fastcast",
-      details: "Fastcast is a lightning-fast streaming site, designed for streaming the content you love.",
+      details: "Fastcast is a lightning-fast streaming site, designed for streaming high quality content. It is based on a torrent client for the web.",
       url: "https://fastcast.nz",
       image: "img/fastcast.jpg"
     },
     {
       name: "Physical Culture",
-      details: "Physical Culture was started by Personal Trainer and Kettlebell Coach Heath Bowman in 2013. Joined by brother Jethro as Boxing Coach, they have a passion for coaching, competing and helping others do the same.",
+      details: "Physical Culture have a passion for coaching, competing and helping others do the same. Their website was designed with Wordpress to showcase their articles, so that they can get their message across effectively.",
       url: "http://physicalculture.co.nz",
       image: "img/physicalculture.jpg"
     },
