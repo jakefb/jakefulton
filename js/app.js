@@ -83,6 +83,24 @@
 
   var sites = [
     {
+      name: "Nelson Sambassadors",
+      details: "Nelson Sambassadors are a community based percussion group, that bring the vibrant rhythms of Brazillian Samba to the Top of The South. I crafted their website to reflect their vibrant colours and funky beats.",
+      url: "http://sambanelson.co.nz",
+      image: "img/samba.jpg"
+    },
+    {
+      name: "Intelligent Kids",
+      details: "Intelligent Kids is a community project, aimed at improving the financial literacy of our future generations. I designed their website to look clean and make their educational content look good across all devices.",
+      url: "https://intelligentkids.com.au",
+      image: "img/intelligentkids.jpg"
+    },
+    {
+      name: "Blue Sky Beekeeping",
+      details: "Blue Sky Beekeeping specialise in breeding high quality Italian Queen bees. Their new website utilises the power of a custom eccommerce store, to sell their merchandise and encourage customers make contact.",
+      url: "http://174.138.26.196",
+      image: "img/blueskybeekeeping.jpg"
+    },
+    {
       name: "Dovedale",
       details: "Dovedale is the market leader in the baking of gluten free products. Their website was designed from the ground up and uses a custom ecommerce store to suit their needs.",
       url: "http://dovedale.nz",
