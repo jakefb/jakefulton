@@ -91,7 +91,7 @@
     {
       name: "Intelligent Kids",
       details: "Intelligent Kids is a community project, aimed at improving the financial literacy of our future generations. I designed their website to look clean and make their educational content look good across all devices.",
-      url: "https://intelligentkids.com.au",
+      url: "http://intelligentkids.com.au",
       image: "img/intelligentkids.jpg"
     },
     {
