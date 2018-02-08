@@ -83,10 +83,10 @@
 
   var sites = [
     {
-      name: "Nelson Sambassadors",
-      details: "Nelson Sambassadors are a community based percussion group, that bring the vibrant rhythms of Brazillian Samba to the Top of The South. I crafted their website to reflect their vibrant colours and funky beats.",
-      url: "http://sambanelson.co.nz",
-      image: "img/samba.jpg"
+      name: "Blue Sky Beekeeping",
+      details: "Blue Sky Beekeeping specialise in breeding high quality Italian Queen bees. Their new website utilises the power of a custom eccommerce store, where you can buy their honey and find out infomation about their products.",
+      url: "https://blueskybeekeeping.com",
+      image: "img/blueskybeekeeping.jpg"
     },
     {
       name: "Intelligent Kids",
@@ -95,10 +95,16 @@
       image: "img/intelligentkids.jpg"
     },
     {
-      name: "Blue Sky Beekeeping",
-      details: "Blue Sky Beekeeping specialise in breeding high quality Italian Queen bees. Their new website utilises the power of a custom eccommerce store, to sell their merchandise and encourage customers make contact.",
-      url: "http://174.138.26.196",
-      image: "img/blueskybeekeeping.jpg"
+      name: "Nelson Sambassadors",
+      details: "Nelson Sambassadors are a percussion group that bring the vibrant rhythms of Brazillian Samba to the Top of The South. I crafted their website to reflect their vibrant colours and funky beats.",
+      url: "http://sambanelson.co.nz",
+      image: "img/samba.jpg"
+    },
+    {
+      name: "Physical Culture",
+      details: "Physical Culture have a passion for coaching, competing and helping others do the same. Their website was designed with Wordpress to showcase their articles, so that they can get their message across effectively.",
+      url: "http://physicalculture.co.nz",
+      image: "img/physicalculture.jpg"
     },
     {
       name: "Dovedale",
@@ -111,12 +117,6 @@
       details: "Fastcast is a lightning-fast streaming site, designed for streaming high quality content. It is based on a torrent client for the web.",
       url: "https://fastcast.nz",
       image: "img/fastcast.jpg"
-    },
-    {
-      name: "Physical Culture",
-      details: "Physical Culture have a passion for coaching, competing and helping others do the same. Their website was designed with Wordpress to showcase their articles, so that they can get their message across effectively.",
-      url: "http://physicalculture.co.nz",
-      image: "img/physicalculture.jpg"
     },
   ]
 })()

@@ -4,7 +4,7 @@
     <div class="card-container">
       <div class="card" data-ng-repeat="item in content.items">
         <a href="{{item.instagramurl}}" target="_blank"><img class="img-fluid" data-ng-src="{{item.image}}" alt="{{item.name}}"></a>
-        <div class="card-block text-sm-center">
+        <div class="card-body text-sm-center">
           <a href data-ng-click="tab.setTab(2)"><h4 class="card-title">{{item.name}}</h4></a>
           <p class="card-text">{{item.details}}</p>
           <p class="card-text"><a class="btn btn-default" data-ng-click="tab.setTab(2)" role="button">Read more</a><p>
@@ -18,9 +18,9 @@
     <div class="card-deck">
       <div class="card" data-ng-repeat="item in content.sites">
         <a href="{{item.url}}" target="_blank"><img class="img-fluid" data-ng-src="{{item.image}}" alt="{{item.name}}"></a>
-        <div class="card-block">
-          <a href="{{item.url}}" target="_blank"><h4 class="card-title">{{item.name}}</h4></a>
-          <p class="card-text">{{item.details}}</p>
+        <div class="card-body">
+          <a href="{{item.url}}" target="_blank"><h4 class="card-title text-center">{{item.name}}</h4></a>
+          <p class="card-text text-center">{{item.details}}</p>
         </div>
         <div class="card-footer">
           <p class="text-center"><a class="btn btn-default" href="{{item.url}}" role="button" target="_blank">View</a></p>

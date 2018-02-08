@@ -8,7 +8,7 @@
     <h1>I'm a web designer living in Wellington</h1>
     <hr width="80">
     <p class="lead">
-      I design beautiful websites that are easy to use.
+      I design beautiful websites that are simple and effective.
     </p>
     <p><a class="btn btn-lg btn-default" href role="button" data-ng-click="tab.setTab(2)">Learn more</a></p>
   </div>
@@ -23,10 +23,9 @@
     var vid = document.getElementById('bgVideo');
     vid.playbackRate = .3;
     $('.scroll-down-home').click(function() {
-      event.preventDefault();
       $('html, body').animate({
         scrollTop: $('#pageContent').offset().top
-      }, 600)
+      }, 1000)
     })
   })
 </script>
