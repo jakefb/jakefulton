@@ -89,24 +89,6 @@
       image: "img/blueskybeekeeping.jpg"
     },
     {
-      name: "Intelligent Kids",
-      details: "Intelligent Kids is a community project, aimed at improving the financial literacy of our future generations. I designed their website to look clean and make their educational content look good across all devices.",
-      url: "http://intelligentkids.com.au",
-      image: "img/intelligentkids.jpg"
-    },
-    {
-      name: "Nelson Sambassadors",
-      details: "Nelson Sambassadors are a percussion group that bring the vibrant rhythms of Brazillian Samba to the Top of The South. I crafted their website to reflect their vibrant colours and funky beats.",
-      url: "http://sambanelson.co.nz",
-      image: "img/samba.jpg"
-    },
-    {
-      name: "Physical Culture",
-      details: "Physical Culture have a passion for coaching, competing and helping others do the same. Their website was designed with Wordpress to showcase their articles, so that they can get their message across effectively.",
-      url: "http://physicalculture.co.nz",
-      image: "img/physicalculture.jpg"
-    },
-    {
       name: "Dovedale",
       details: "Dovedale is the market leader in the baking of gluten free products. Their website was designed from the ground up and uses a custom ecommerce store to suit their needs.",
       url: "http://dovedale.nz",
